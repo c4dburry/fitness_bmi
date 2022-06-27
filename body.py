@@ -5,6 +5,8 @@
 # Formel
 # BMI = Körpergewicht : (Körpergröße)²
 
+##testing
+
 #Eingaben
 print("Bitte geben Sie ihr Gewicht ein: ")
 bodyweight=float(input())
