@@ -11,3 +11,6 @@ BMR, Kcal, BMI, BodyFat
 
 ### BMI
 #BMI = Körpergewicht : (Körpergröße)²
+
+###KCAL
+# added daily kcal needs
