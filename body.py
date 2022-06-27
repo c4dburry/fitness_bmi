@@ -30,7 +30,19 @@ print(gendertwo)
  
 #Bewegungslevel
 print("Bitte wählen Sie ihr Tätigkeitslevel aus:\n Level 1: liegend, keine Bewegung \n Level 2: wenig bewegung \n Level 3: vorwiegend sitzend \n Level 4: sitzend und stehend \n Level 5: körperlichg anstrengende Arbeit")
+pal = int(input())
+if pal == 1:
+    pal = 0.95
+elif pal == 2:
+    pal = 1.2
+elif pal == 3:
+    pal = 1.6
+elif pal == 4:
+    pal = 1.8
+else:
+    pal = 2.0
 
+    
 #Berechnung läuft
 print("Ihre Eingaben waren erfolgreich - Berechnung beginnt")
 print("berechne Daten....")
@@ -62,3 +74,7 @@ else:
 format_bmr = "{:.2f}".format(bmr)
 print(format_bmr)
 
+#kcal bedarf berechnen
+# Formel: kcal= BMR X PAL (physical activity Level)
+kcal = bmr * pal 
+print("Der Tagesbedarf an kcal ist:"+str(kcal))
